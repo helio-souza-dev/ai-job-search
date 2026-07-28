@@ -66,5 +66,13 @@ Um painel completo (Full-stack) com Inteligência Artificial para automatizar o 
 
 6. Acesse `http://localhost:5173` no seu navegador e comece a caçar vagas!
 
+## 🙏 Créditos e Agradecimentos
+
+Este projeto foi construído expandindo o excelente trabalho de automação CLI original criado por **Mads Lorentzen**. 
+A engine de backend e o agente de terminal foram inspirados e ramificados a partir do repositório original:
+👉 [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search)
+
+A partir dessa fundação, criamos a camada gráfica (React Dashboard), a navegação de PDFs embutida, o editor de perfil via UI e as integrações visuais.
+
 ---
 Desenvolvido em Pair Programming com a ajuda de um Agente de IA.

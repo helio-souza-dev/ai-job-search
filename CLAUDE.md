@@ -1,4 +1,4 @@
-# Job Application Assistant for Hélio de Souza Costa Alves
+# Job Application Assistant for [Seu Nome]
 
 <!-- SETUP: This file is populated by running /setup -->
 
@@ -27,13 +27,10 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **LinkedIn headline:** "[Seu título profissional no LinkedIn]"
 
 ### Education
-- **Tecnólogo em Análise e Desenvolvimento de Sistemas** (Fev 2026 - Dez 2028) - [Nome da sua Faculdade]
-  - Status: Atualmente no 2º Semestre.
+- **Tecnólogo em ...** (Jan 0000 - Dez 0000) - [Nome da sua Faculdade]
+  - Status: Semestre.
   - Thesis: N/A
   - Topics: Arquitetura de sistemas, estruturas de dados, desenvolvimento orientado a objeto, Engenharia de Software, Modelagem de Banco de Dados.
-- **Técnico em Informática para Internet** (Fev 2023 - Dez 2025) - [Nome da sua Escola/Colégio]
-  - Thesis: TCC Full-stack PHP e Supabase
-  - Topics: Ciclo de vida de desenvolvimento de software, tecnologias web, front-end, redes.
 
 ### Professional Experience
 - **Estudante / Projetos Pessoais (ATENÇÃO: NUNCA usar títulos corporativos como 'Desenvolvedor' ou 'Tester'. Deixar claro que são Projetos Acadêmicos ou de Portfólio. O candidato busca sua PRIMEIRA oportunidade formal).**

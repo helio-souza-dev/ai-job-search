@@ -1,9 +1,9 @@
-# Job Application Assistant for [Seu Nome]
+# Job Application Assistant for Hélio de Souza Costa Alves
 
 <!-- SETUP: This file is populated by running /setup -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [Seu Nome], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Hélio de Souza Costa Alves, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,18 +13,18 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ## Candidate Profile
 
 ### Identity
-- **Name:** Hélio de Souza Costa Alves
-- **Email:** heliosol777@gmail.com
-- **Phone:** +55 11988162072
-- **Location:** Poá, São Paulo
-- **LinkedIn:** https://www.linkedin.com/in/helio-souza-dev
-- **GitHub:** https://github.com/helio-souza-dev
-- **Portfolio:** https://helios-mu-eight.vercel.app/
+- **Name:** [Seu Nome Completo]
+- **Email:** [seu.email@exemplo.com]
+- **Phone:** [+55 11 99999-9999]
+- **Location:** [Sua Cidade, Estado]
+- **LinkedIn:** [Link do seu perfil]
+- **GitHub:** [Link do seu perfil]
+- **Portfolio:** [Link do seu site]
 - **Languages:** Português (Nativo), Inglês
 - **CV language:** Português
 
 - **Status:** Estudante (buscando estágio)
-- **LinkedIn headline:** "Estudante de Análise e Desenvolvimento de Sistemas | Java | Spring Boot | PHP"
+- **LinkedIn headline:** "[Seu título profissional no LinkedIn]"
 
 ### Education
 - **Tecnólogo em Análise e Desenvolvimento de Sistemas** (Fev 2026 - Dez 2028) - [Nome da sua Faculdade]

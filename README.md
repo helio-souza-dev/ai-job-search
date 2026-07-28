@@ -1,4 +1,4 @@
-# AI Job Search Dashboard 
+# AI Job Search Dashboard 🚀
 
 Um painel completo (Full-stack) com Inteligência Artificial para automatizar o seu processo de busca e aplicação para vagas de emprego. Construído com React, Node.js e a API do Gemini.
 
@@ -6,9 +6,7 @@ Um painel completo (Full-stack) com Inteligência Artificial para automatizar o 
 
 <img width="1067" height="809" alt="image" src="https://github.com/user-attachments/assets/4465bd4e-6693-4a80-800c-5f65c88a0ec7" />
 
-
-
-## Funcionalidades
+## 🌟 Funcionalidades
 
 - **Busca de Vagas via LinkedIn:** Integrado com um agente de CLI customizado (`.agents/skills/linkedin-search`) que varre as vagas usando ferramentas autônomas. Filtros anti-duplicação inclusos.
 - **Alfaiate de Currículos (CV Tailor):** O backend consome a API do Google Gemini (Flash/Pro) para reescrever o seu currículo em formato LaTeX, focando nas palavras-chave exatas da vaga.
@@ -17,14 +15,13 @@ Um painel completo (Full-stack) com Inteligência Artificial para automatizar o 
 - **Visualizador Embutido (Glassmorphism):** Leia e baixe seus PDFs diretamente do navegador, sem bagunçar suas pastas locais.
 - **Cache Local:** Navegação fluída tipo SPA sem recarregamentos desnecessários graças ao React e LocalStorage.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - **Frontend:** React + Vite (HTML/CSS Vanilla)
 - **Backend:** Node.js + Express
 - **IA:** `@google/generative-ai` (Gemini API) com Padrão Adapter
 - **Documentos:** LaTeX (`moderncv` template)
-- **Database:** Arquivo d![Uploading image.png…]()
-e texto estruturado (`job_search_tracker.csv`)
+- **Database:** Arquivo de texto estruturado (`job_search_tracker.csv`)
 
 ## ⚙️ Como Instalar e Rodar
 

@@ -1,10 +1,9 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Hélio de Souza Costa Alves
 
 <!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Hélio de Souza Costa Alves, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,70 +12,64 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **Name:** [Seu Nome Completo]
+- **Email:** [seu.email@exemplo.com]
+- **Phone:** [+55 11 99999-9999]
+- **Location:** [Sua Cidade, Estado]
+- **LinkedIn:** [Link do seu perfil]
+- **GitHub:** [Link do seu perfil]
+- **Portfolio:** [Link do seu site]
+- **Languages:** Português (Nativo), Inglês
+- **CV language:** Português
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Estudante (buscando estágio)
+- **LinkedIn headline:** "[Seu título profissional no LinkedIn]"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Tecnólogo em Análise e Desenvolvimento de Sistemas** (Fev 2026 - Dez 2028) - FATEC Ferraz de Vasconcelos
+  - Status: Atualmente no 2º Semestre.
+  - Thesis: N/A
+  - Topics: Arquitetura de sistemas, estruturas de dados, desenvolvimento orientado a objeto, Engenharia de Software, Modelagem de Banco de Dados.
+- **Técnico em Informática para Internet** (Fev 2023 - Dez 2025) - ETEC Poá
+  - Thesis: TCC Full-stack PHP e Supabase
+  - Topics: Ciclo de vida de desenvolvimento de software, tecnologias web, front-end, redes.
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Estudante / Projetos Pessoais (ATENÇÃO: NUNCA usar títulos corporativos como 'Desenvolvedor' ou 'Tester'. Deixar claro que são Projetos Acadêmicos ou de Portfólio. O candidato busca sua PRIMEIRA oportunidade formal).**
+  - Desenvolvimento de aplicação full-stack utilizando PHP no Back-end e Supabase para persistência de dados e autenticação (TCC).
+  - Projetos focados em lógica de negócio e integração com banco de dados (SQL).
+  - Portfólio no GitHub com diversos projetos práticos. Se a vaga pedir Python ou outra linguagem, cite em bullet points os projetos/repositórios específicos focados nessa tecnologia no GitHub do candidato.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Java, Spring Boot, PHP, SQL (MySQL, PostgreSQL)
+- **Secondary:** Python, Supabase, Git, AWS
+- **Domain:** Desenvolvimento Back-end, Lógica de Programação, Desenvolvimento Full-stack
+- **Software:** Ferramentas ágeis (Scrum/Kanban)
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- N/A
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- N/A
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- N/A
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **[A DEFINIR]**
+- **Strengths:** Vontade de aprender, base técnica sólida, conhecimento prático em backend.
+- **Growth areas:** [A DEFINIR]
+- **Thrives in:** Ambientes escaláveis onde possa contribuir em equipe e desenvolver novas habilidades.
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Primeira oportunidade na carreira de desenvolvimento de software.
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Desenvolvimento de Software, TI, Tecnologia
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Não pode ser horário integral pela manhã (estuda até 10:00 ou 12:00). Apenas vagas flexíveis ou no período da tarde.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -132,7 +125,7 @@ Both documents MUST be compiled and visually inspected via the Read tool on the 
 
 ### ATS & keyword verification (CV)
 ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `pdftotext -layout` and verify what a parser sees. `pdftotext` (poppler) is optional - if missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
-- [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `�` replacement characters, or text visible in the PDF but absent from the extraction
+- [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `` replacement characters, or text visible in the PDF but absent from the extraction
 - [ ] Email and phone appear as **literal text** in the extraction (icon-glyph noise like `MOBILE-ALT`/`Envelope` is harmless, but a contact detail carried only by an icon or hyperlink is invisible to ATS)
 - [ ] Reading order of the extracted text matches the visual order (single-column stock template is safe; multi-column custom templates are where this breaks)
 - [ ] Posting keywords covered or honestly absent - synonym-only matches tightened to the posting's exact term where truthfully applicable, keywords the profile genuinely supports added to experience bullets, genuine gaps left visible and **never stuffed**

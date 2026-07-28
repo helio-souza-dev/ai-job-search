@@ -89,3 +89,9 @@ upskill/*.md
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Dashboard & API Keys
+.env
+dashboard/backend/.env
+CLAUDE.local.md
+cv/main_local.tex

@@ -1,9 +1,9 @@
-# Job Application Assistant for Hélio de Souza Costa Alves
+# Job Application Assistant for [Seu Nome]
 
 <!-- SETUP: This file is populated by running /setup -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for Hélio de Souza Costa Alves, helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for [Seu Nome], helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,25 +13,25 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ## Candidate Profile
 
 ### Identity
-- **Name:** [Seu Nome Completo]
-- **Email:** [seu.email@exemplo.com]
-- **Phone:** [+55 11 99999-9999]
-- **Location:** [Sua Cidade, Estado]
-- **LinkedIn:** [Link do seu perfil]
-- **GitHub:** [Link do seu perfil]
-- **Portfolio:** [Link do seu site]
+- **Name:** Hélio de Souza Costa Alves
+- **Email:** heliosol777@gmail.com
+- **Phone:** +55 11988162072
+- **Location:** Poá, São Paulo
+- **LinkedIn:** https://www.linkedin.com/in/helio-souza-dev
+- **GitHub:** https://github.com/helio-souza-dev
+- **Portfolio:** https://helios-mu-eight.vercel.app/
 - **Languages:** Português (Nativo), Inglês
 - **CV language:** Português
 
 - **Status:** Estudante (buscando estágio)
-- **LinkedIn headline:** "[Seu título profissional no LinkedIn]"
+- **LinkedIn headline:** "Estudante de Análise e Desenvolvimento de Sistemas | Java | Spring Boot | PHP"
 
 ### Education
-- **Tecnólogo em Análise e Desenvolvimento de Sistemas** (Fev 2026 - Dez 2028) - FATEC Ferraz de Vasconcelos
+- **Tecnólogo em Análise e Desenvolvimento de Sistemas** (Fev 2026 - Dez 2028) - [Nome da sua Faculdade]
   - Status: Atualmente no 2º Semestre.
   - Thesis: N/A
   - Topics: Arquitetura de sistemas, estruturas de dados, desenvolvimento orientado a objeto, Engenharia de Software, Modelagem de Banco de Dados.
-- **Técnico em Informática para Internet** (Fev 2023 - Dez 2025) - ETEC Poá
+- **Técnico em Informática para Internet** (Fev 2023 - Dez 2025) - [Nome da sua Escola/Colégio]
   - Thesis: TCC Full-stack PHP e Supabase
   - Topics: Ciclo de vida de desenvolvimento de software, tecnologias web, front-end, redes.
 

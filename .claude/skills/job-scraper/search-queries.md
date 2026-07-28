@@ -63,9 +63,9 @@ site:linkedin.com/jobs "Estágio Tecnologia" "São Paulo"
 
 When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
 - São Paulo (Capital) e arredores
-- Ferraz de Vasconcelos, Poá, Suzano, Mogi das Cruzes (Alto Tietê)
+- [Cidades Vizinhas ou sua Região Metropolitana]
 - Remoto (qualquer lugar do Brasil)
-- Campinas (too far, apenas se for remoto ou híbrido muito flexível)
+- [Cidades mais distantes, apenas se for híbrido flexível]
 
 ## Date Filter
 

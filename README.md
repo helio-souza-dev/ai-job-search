@@ -75,4 +75,13 @@ A engine de backend e o agente de terminal foram inspirados e ramificados a part
 A partir dessa fundação, criamos a camada gráfica (React Dashboard), a navegação de PDFs embutida, o editor de perfil via UI e as integrações visuais.
 
 ---
-Desenvolvido em Pair Programming com a ajuda de um Agente de IA.
+
+### 👨‍💻 Sobre o Desenvolvimento & Arquitetura
+
+Embora o código tenha sido escrito em Pair Programming com um Agente de IA, **todas as decisões de arquitetura, design de interface e engenharia de produto foram lideradas por mim**. 
+
+Alguns destaques da minha atuação no projeto:
+- **Engenharia Front-end (React/Vite):** Idealização e construção do Dashboard do zero como uma Single Page Application (SPA).
+- **Design System:** Definição da identidade visual utilizando a estética *Glassmorphism* (UI moderna, limpa e responsiva sem uso de bibliotecas de componentes engessadas).
+- **Integração Full-stack:** Arquitetura da comunicação entre a interface em React e a API em Node.js.
+- **UX/UI Decisions:** Criação de fluxos complexos como a "Máquina do Tempo de CVs" (leitor de PDF no navegador via iframe) e o "Editor Visual de Perfil" integrado.

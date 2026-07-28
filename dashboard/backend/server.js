@@ -183,6 +183,35 @@ app.get('/api/cv-versions/:folderName', (req, res) => {
     res.json(pdfs);
 });
 
+// 5. Endpoint to get User Profile (CLAUDE.md)
+app.get('/api/profile', (req, res) => {
+    try {
+        const profilePath = path.join(ROOT_DIR, 'CLAUDE.md');
+        if (fs.existsSync(profilePath)) {
+            const content = fs.readFileSync(profilePath, 'utf8');
+            res.json({ content });
+        } else {
+            res.json({ content: '' });
+        }
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// 6. Endpoint to update User Profile (CLAUDE.md)
+app.post('/api/profile', (req, res) => {
+    const { content } = req.body;
+    if (content === undefined) return res.status(400).json({ error: 'Nenhum conteúdo fornecido' });
+    
+    try {
+        const profilePath = path.join(ROOT_DIR, 'CLAUDE.md');
+        fs.writeFileSync(profilePath, content, 'utf8');
+        res.json({ message: 'Perfil salvo com sucesso!' });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Backend server running on http://localhost:${PORT}`);
 });

@@ -14,6 +14,9 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [applyLoading, setApplyLoading] = useState(null);
 
+  const [profileContent, setProfileContent] = useState('');
+  const [savingProfile, setSavingProfile] = useState(false);
+
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedJobFolder, setSelectedJobFolder] = useState('');
   const [pdfVersions, setPdfVersions] = useState([]);
@@ -22,6 +25,8 @@ function App() {
   useEffect(() => {
     if (view === 'tracker') {
       fetchTracker();
+    } else if (view === 'profile') {
+      fetchProfile();
     }
   }, [view]);
 
@@ -37,6 +42,33 @@ function App() {
     } catch (err) {
       console.error(err);
     }
+  };
+
+  const fetchProfile = async () => {
+    try {
+      const res = await fetch('http://localhost:3001/api/profile');
+      const data = await res.json();
+      setProfileContent(data.content || '');
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const saveProfile = async () => {
+    setSavingProfile(true);
+    try {
+      const res = await fetch('http://localhost:3001/api/profile', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ content: profileContent })
+      });
+      const data = await res.json();
+      if (res.ok) alert('Perfil salvo com sucesso! O "Cérebro" da IA foi atualizado.');
+      else alert('Erro ao salvar o perfil.');
+    } catch (err) {
+      console.error(err);
+    }
+    setSavingProfile(false);
   };
 
   const openPdfViewer = async (job) => {
@@ -121,6 +153,12 @@ function App() {
             onClick={() => setView('search')}
           >
             Buscar Vagas
+          </button>
+          <button 
+            className={`btn ${view === 'profile' ? 'primary' : ''}`}
+            onClick={() => setView('profile')}
+          >
+            🧠 Meu Perfil
           </button>
         </div>
       </header>
@@ -212,6 +250,33 @@ function App() {
                 ))}
               </div>
             )}
+          </div>
+        )}
+
+        {view === 'profile' && (
+          <div className="glass-panel" style={{ maxWidth: '900px', margin: '0 auto' }}>
+            <h2 style={{ marginBottom: '0.5rem' }}>O Cérebro da IA (CLAUDE.md)</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
+              Edite as instruções, seu histórico e seus dados pessoais usando Markdown. O Agente vai usar este texto exato para formatar seu currículo.
+            </p>
+            
+            <textarea 
+              className="profile-editor"
+              value={profileContent}
+              onChange={(e) => setProfileContent(e.target.value)}
+              placeholder="Carregando..."
+            />
+            
+            <div className="save-bar">
+               <button 
+                 className="btn primary" 
+                 onClick={saveProfile}
+                 disabled={savingProfile}
+                 style={{ padding: '0.8rem 2rem', fontSize: '1.05rem' }}
+               >
+                 {savingProfile ? 'Salvando...' : '💾 Salvar Perfil'}
+               </button>
+            </div>
           </div>
         )}
       </main>

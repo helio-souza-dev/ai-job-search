@@ -1,9 +1,12 @@
-# AI Job Search Dashboard 🚀
+# AI Job Search Dashboard 
 
 Um painel completo (Full-stack) com Inteligência Artificial para automatizar o seu processo de busca e aplicação para vagas de emprego. Construído com React, Node.js e a API do Gemini.
 
-> 📸 **[COLOQUE UM PRINT DO SEU DASHBOARD AQUI]**
-> *Recomendação: Tire um print da tela inteira focando no "Meu Funil de Vagas", e depois um print mostrando o "Visualizador de PDF" aberto com um currículo.*
+<img width="1148" height="871" alt="image" src="https://github.com/user-attachments/assets/6c9e94cd-89cc-42de-962a-675c0e5a9957" />
+
+<img width="1067" height="809" alt="image" src="https://github.com/user-attachments/assets/4465bd4e-6693-4a80-800c-5f65c88a0ec7" />
+
+
 
 ## 🌟 Funcionalidades
 
@@ -20,7 +23,8 @@ Um painel completo (Full-stack) com Inteligência Artificial para automatizar o 
 - **Backend:** Node.js + Express
 - **IA:** `@google/generative-ai` (Gemini API) com Padrão Adapter
 - **Documentos:** LaTeX (`moderncv` template)
-- **Database:** Arquivo de texto estruturado (`job_search_tracker.csv`)
+- **Database:** Arquivo d![Uploading image.png…]()
+e texto estruturado (`job_search_tracker.csv`)
 
 ## ⚙️ Como Instalar e Rodar
 

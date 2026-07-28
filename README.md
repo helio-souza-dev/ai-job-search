@@ -8,7 +8,7 @@ Um painel completo (Full-stack) com Inteligência Artificial para automatizar o 
 
 
 
-## 🌟 Funcionalidades
+## Funcionalidades
 
 - **Busca de Vagas via LinkedIn:** Integrado com um agente de CLI customizado (`.agents/skills/linkedin-search`) que varre as vagas usando ferramentas autônomas. Filtros anti-duplicação inclusos.
 - **Alfaiate de Currículos (CV Tailor):** O backend consome a API do Google Gemini (Flash/Pro) para reescrever o seu currículo em formato LaTeX, focando nas palavras-chave exatas da vaga.
@@ -17,7 +17,7 @@ Um painel completo (Full-stack) com Inteligência Artificial para automatizar o 
 - **Visualizador Embutido (Glassmorphism):** Leia e baixe seus PDFs diretamente do navegador, sem bagunçar suas pastas locais.
 - **Cache Local:** Navegação fluída tipo SPA sem recarregamentos desnecessários graças ao React e LocalStorage.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Frontend:** React + Vite (HTML/CSS Vanilla)
 - **Backend:** Node.js + Express
